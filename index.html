@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026海南自贸区“心系全海南”数字公益创新大赛 | 官方宣传平台</title>
+    <meta name="description" content="2026年海南自贸区数字公益创新大赛，汇聚万长阳、古北路、炒股养家等顶尖投资大师。以科技向善为愿景，通过数字技术推动公益转型。">
+    <meta name="keywords" content="海南自贸区公益大赛, 数字公益, 万长阳, 炒股养家, 赵老哥, 牛散公益, 科技慈善, 海南2026">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Space Grotesk', 'Noto Sans SC', sans-serif;
+            background-color: #050505;
+            color: #e5e7eb;
+            overflow-x: hidden;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .bg-cyber-grid {
+            background-image: linear-gradient(rgba(59, 130, 246, 0.05) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+        @keyframes scanline {
+            0% { transform: translateY(-100%); }
+            100% { transform: translateY(100%); }
+        }
+        .scanline {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: linear-gradient(to bottom, transparent, rgba(59, 130, 246, 0.1), transparent);
+            animation: scanline 8s linear infinite;
+            pointer-events: none;
+            z-index: 100;
+        }
+        .text-glow-blue { text-shadow: 0 0 15px rgba(59, 130, 246, 0.8); }
+        .text-glow-amber { text-shadow: 0 0 15px rgba(245, 158, 11, 0.8); }
+        
+        /* 隐藏滚动条但保留功能 */
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: #050505; }
+        ::-webkit-scrollbar-thumb { background: #222; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #3b82f6; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "recharts": "https://esm.sh/recharts@^3.7.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+    <div class="scanline"></div>
+</body>
+</html>
